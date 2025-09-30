@@ -13,6 +13,8 @@ Here are some highlights of my work:
 Visit my [Portfolio website](https://fadi-mostefai.github.io/) to view more details on my projects and who I am.
 
 
+
+
 ## **Disclaimer:**  
 > This portfolio website was built using a customisable template from [Varad Bhogayata](https://github.com/varadbhogayata/varadbhogayata.github.io).  
 > While the design and structure provided a foundation, all content, customisations, and enhancements reflect my personal work and style.
