@@ -1,5 +1,5 @@
 # Fadi Mostefai - Portfolio
-Welcome to my portfolio website, where you can find information about me, as well as all projects I have worked on.
+Welcome to my portfolio, where you can find information about me, as well as all projects I have worked on.
 
 ## About Me
 I am a current 2nd year undergraduate student studying the Artificial Intelligence with a Year in Industry module at King's College London. I'm a passionate developer with interests in robotics and robotic prosthetics, hoping to one day work my dream job as a Robotics and A.I. engineer. 
