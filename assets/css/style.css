@@ -311,9 +311,9 @@ li.logo span {
 
 .container {
   width: 95%;
-  margin: 0 auto;   
+  margin: 0;   
   max-width: 1200px;
-  padding: 0;       
+  padding: 0 20px;       
 }
 
 h3 {
