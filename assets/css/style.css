@@ -209,7 +209,7 @@ nav i {
 
 main {
   background: url(../../assets/img/bg.png) repeat;
-  padding-left: 190px;
+  padding-left: 0;
 }
 
 dl {
@@ -328,7 +328,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: #633577 repeat;
   position: relative;
   min-height: auto;
   padding: 40px 0;
@@ -558,7 +558,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #008073 !important;
+  color: #80002b !important;
 }
 
 /* .teal-text {
@@ -568,7 +568,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #008073 !important;
+  background-color: #80002b !important;
 }
 
 /* .teal {
