@@ -329,8 +329,16 @@ h3 {
 }
 
 .section {
-  padding: 40px 0; 
+  padding: 20px 0; 
   position: relative;
+}
+
+#intro.section {
+  padding-bottom: 0;
+}
+
+#about.section {
+  padding-top: 0;
 }
 
 .full-height {
