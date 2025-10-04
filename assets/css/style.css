@@ -15,9 +15,13 @@
   border-radius: 50% !important;
 }
 
-.profile-pic img {
-  width: 100%;
-  height: auto;
+.profile-pic {
+  position: relative;
+  width: 200px;      
+  height: 200px;     
+  margin: 20px 0;   
+  border: 6px solid rgba(128, 0, 43, 0.4);  
+  border-radius: 50% !important;
 }
 
 .tracker {
@@ -300,6 +304,9 @@ li.logo span {
 
 .container {
   width: 95%;
+  margin: 0 auto;   
+  max-width: 1200px;
+  padding: 0;       
 }
 
 h3 {
@@ -311,8 +318,7 @@ h3 {
 }
 
 .section {
-  padding-bottom: 30px;
-  padding-top: 0;
+  padding: 40px 0; 
   position: relative;
 }
 
@@ -598,7 +604,7 @@ small {
 @media (max-width: 992px) {
   main {
     padding-left: 0px;
-    padding-top: 64px;
+    padding-top: 0;
   }
   ul.side-nav a {
     line-height: 100%;
@@ -650,7 +656,7 @@ small {
   }
   h3, .container {
     position: relative;
-    top: 64px;
+    top: 0;
   }
   section#intro {
     margin-bottom: -64px;
