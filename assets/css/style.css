@@ -356,6 +356,17 @@ h3 {
   font-weight: 200;
   position: relative;
   padding: 20px 0;
+  margin: 0;
+}
+
+#about .container,
+#experience .container,
+#projects .container,
+#skills .container,
+#education .container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 /* #intro.section .container *:not(span) {
@@ -398,6 +409,9 @@ h3 {
 
 .card {
   margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .card .role {
