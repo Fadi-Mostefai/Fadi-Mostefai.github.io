@@ -180,6 +180,26 @@ blockquote * {
   text-align: center;
 }
 
+/* main nav */
+
+nav {
+  background: white;
+  box-shadow: none;
+  height: 0;
+}
+
+/* nav {
+  background: rgb(149, 126, 212);
+  box-shadow: none;
+  height: 0;
+} */
+
+nav i {
+  padding: 0 15px;
+  position: relative;
+  top: 5px;
+}
+
 /* main */
 
 /* main {
@@ -189,7 +209,7 @@ blockquote * {
 
 main {
   background: url(../../assets/img/bg.png) repeat;
-  padding-left: 0;
+  padding-left: 190px;
 }
 
 dl {
@@ -207,7 +227,64 @@ dt {
   margin-left: 0.5rem;
 }
 
+ul.side-nav {
+  width: 190px;
+}
 
+ul.side-nav li {
+  padding: 0;
+}
+
+/* ul.side-nav.fixed a {
+  box-sizing: content-box;
+  color: rgb(48, 122, 207);
+  display: block;
+  line-height: 100%;
+  padding: 10px 0 12px;
+} */
+
+ul.side-nav.fixed a {
+  box-sizing: content-box;
+  color: rgb(16, 202, 56);
+  display: block;
+  line-height: 100%;
+  padding: 10px 0 12px;
+}
+
+ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
+  border: none;
+  font-weight: 200;
+}
+
+/* ul.side-nav.fixed li.logo {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  box-sizing: content-box;
+  min-height: 90px;
+  padding: 30px 30px 40px;
+} */
+
+ul.side-nav.fixed li.logo {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  box-sizing: content-box;
+  min-height: 90px;
+  padding: 30px 30px 40px;
+}
+
+ul.side-nav.fixed li.logo a {
+  font-weight: 200;
+  line-height: 100%;
+}
+
+ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) a:hover {
+  background-color: #fafafa;
+  border-left: 3px solid;
+}
+
+ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
+  color: #333 !important;
+}
 
 li.logo span {
   display: block;
@@ -222,11 +299,7 @@ li.logo span {
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;  /* Add this */
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;  /* Add this */
+  width: 95%;
 }
 
 h3 {
@@ -239,7 +312,7 @@ h3 {
 
 .section {
   padding-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 0;
   position: relative;
 }
 
@@ -257,14 +330,15 @@ h3 {
 #intro.section {
   background: #a7ffeb repeat;
   position: relative;
+  min-height: auto;
+  padding: 40px 0;
 }
 
 #intro.section .container {
   color: white;
   font-weight: 200;
-  left: 0;
-  position: absolute;
-  top: 0;
+  position: relative;
+  padding: 20px 0;
 }
 
 /* #intro.section .container *:not(span) {
@@ -524,6 +598,22 @@ small {
 @media (max-width: 992px) {
   main {
     padding-left: 0px;
+    padding-top: 64px;
+  }
+  ul.side-nav a {
+    line-height: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  nav {
+    background: #fff;
+    height: 64px;
+    position: absolute;
+  }
+  nav a.button-collapse, nav a.button-collapse i {
+    color: #009688;
+    height: 56px;
+    line-height: 56px;
   }
   h3 {
     padding: 20px 30px;
@@ -531,6 +621,39 @@ small {
   }
   .container {
     margin: 0 auto;
+  }
+  nav.hide-on-large.only.trigger {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+  .name-title {
+    display: block;
+    height: 100%;
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+  }
+  .name-title>span, .name-title>a {
+    position: relative;
+    line-height: 20px;
+  }
+  .name-title a {
+    font-size: 22px;
+    display: block;
+  }
+  .name-title span {
+    display: block;
+    font-size: 14px;
+  }
+  h3, .container {
+    position: relative;
+    top: 64px;
+  }
+  section#intro {
+    margin-bottom: -64px;
   }
   .card .role {
     position: relative;
