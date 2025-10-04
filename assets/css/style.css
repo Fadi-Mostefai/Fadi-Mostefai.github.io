@@ -19,17 +19,15 @@
   position: relative;
   width: 200px;
   height: 200px;
-  margin: 20px 0;
-  border: 6px solid rgba(99, 53, 119, 0.4); 
+  border: 6px solid rgba(99, 53, 119, 0.4);
   border-radius: 50% !important;
-  float: left;  
-  clear: both;  
+  margin: 0 auto;
+  display: block;
 }
 
 .profile-image {
-  width: 100%;
-  text-align: left;
-  margin: 20px 0;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .tracker {
