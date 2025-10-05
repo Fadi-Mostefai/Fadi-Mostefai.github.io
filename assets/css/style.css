@@ -156,8 +156,15 @@ blockquote * {
 
 
 main {
-  background: url(../../assets/img/bg.png) repeat;
   padding-left: 0;
+}
+
+#about.section,
+#experience.section,
+#projects.section,
+#skills.section,
+#education.section {
+  background: url(../../assets/img/bg.png) repeat;
 }
 
 dl {
@@ -222,6 +229,7 @@ h3 {
 
 
 #intro.section {
+  background: #633577;
   position: relative;
   min-height: auto;
   padding: 40px 0 0 0;
@@ -230,7 +238,7 @@ h3 {
 }
 
 #intro.section .container {
-  color: #333;
+  color: white;
   font-weight: 200;
   position: relative;
   padding: 20px 0;
