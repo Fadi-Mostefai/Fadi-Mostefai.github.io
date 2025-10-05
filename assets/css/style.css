@@ -161,6 +161,12 @@ main {
 
 .section:not(#intro) {
   background: url(../../assets/img/bg.png) repeat;
+  min-height: 100%;
+  height: auto;
+}
+
+.section:not(#intro) .container {
+  background: transparent;
 }
 
 dl {
@@ -289,10 +295,11 @@ h3 {
 }
 
 .card {
-  margin-bottom: 60px;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  background: transparent;
 }
 
 .card .role {
@@ -314,7 +321,8 @@ h3 {
 }
 
 .card .card-content {
-  padding-bottom: 30px;
+  padding-bottom: 0;
+  background: transparent;
 }
 
 .card .card-content p {
