@@ -222,15 +222,15 @@ h3 {
 
 
 #intro.section {
-  background: #633577 repeat;
   position: relative;
   min-height: auto;
   padding: 40px 0 0 0;
   margin-bottom: 0;
+  width: 100%;
 }
 
 #intro.section .container {
-  color: white;
+  color: #333;
   font-weight: 200;
   position: relative;
   padding: 20px 0;
