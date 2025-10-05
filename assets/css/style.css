@@ -157,13 +157,13 @@ blockquote * {
 
 main {
   padding-left: 0;
+  background: url(../../assets/img/bg.png) repeat;
 }
 
 .section:not(#intro) {
-  background: url(../../assets/img/bg.png) repeat;
-  min-height: 100%;
-  height: 100%;
-  margin-bottom: -1px; /* Remove any potential gap between sections */
+  background: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 .section:not(#intro) > * {
@@ -172,8 +172,8 @@ main {
 
 .section:not(#intro) .container {
   background: transparent;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
 }
 
 dl {
