@@ -398,6 +398,44 @@ a.hoverline {
 
 /* main a.hoverline */
 
+/* Project card images: keep aspect ratio and consistent height */
+.card .card-image {
+  /* ensure the card image area crops overflowing images */
+  overflow: hidden;
+  height: 220px;
+}
+
+.card .card-image img.activator {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Use object-position to shift the image focal point downward without
+     translating the image (translate created visible empty space). Adjust
+     the percentage to tune the crop (smaller value moves image down).
+     Try 30% - 50% if you want more/less of the top visible. */
+  object-position: center 40%;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  /* on very small screens images crop differently; nudge slightly less */
+  .card .card-image img.activator {
+    object-position: center 45%;
+  }
+}
+
+/* Prevent section title from overlapping project cards */
+#projects .container > .row {
+  margin-top: 20px; /* push cards down a bit */
+}
+
+@media (min-width: 992px) {
+  /* on large screens give slightly more breathing room */
+  #projects .container > .row {
+    margin-top: 30px;
+  }
+}
+
 /* a.hoverline:hover {
   border-bottom: 3px solid #24305e !important;
 } */
